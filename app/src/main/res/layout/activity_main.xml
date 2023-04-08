@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:labelFor="@+id/a_m_fullname"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Full Name" />
+
+    <EditText
+        android:layout_marginTop="5dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:layout_gravity="center"
+        android:background="@drawable/border"
+        android:hint="Please enter full name"
+        android:id="@+id/a_m_fullname"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="text"/>
+
+    <TextView
+        android:labelFor="@+id/a_m_salary"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gross Salary" />
+
+    <EditText
+        android:layout_marginTop="5dp"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:layout_gravity="center"
+        android:background="@drawable/border"
+        android:hint="Please enter gross salary"
+        android:id="@+id/a_m_salary"
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="number"/>
+
+    <Button
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:id="@+id/buttonCalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate" />
+
+    <ListView
+        android:id="@+id/lvEmp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</androidx.appcompat.widget.LinearLayoutCompat>
